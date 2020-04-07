@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+	//membuat program goto
+	char jump = 'tujuh' ;
+	
+	cout << "Masukkan huruf y untuk melompat" << endl;
+	cout << "Masukkan huruf n untuk tidak melompat" << endl;
+	cin >> jump;
+	
+	lempeng:
+	cout << "satu" << endl;
+	if ( jump == 'y' ) goto lompat;
+	cout << "dua" << endl;
+	lompat:
+	cout << "tiga" << endl;
+	
+	if ( jump == 'm' ) goto lempeng;
+	
+	return 0;
+}
